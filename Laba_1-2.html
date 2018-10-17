@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Laba 1-2</title>
+	<p> Форма замовлення </p>
+</head>
+<body>
+
+	<!-- Задание 1-4 -->
+	<form action="processorder.php" method=post>
+		<b> П. І. Пб. замовника: </b>
+		<input type="text" name="fam" size=40> <br> <br>
+		<p> Я покупаю товар первый раз <input name="firstBuy" type=radio value="yes"></p>
+		<p> Я уже был клиентом магазина <input name="firstBuy" type=radio value="no"></p>
+		<table  border=1 cellpadding=7 cellspacing=1 bordercolor=mediumvioletred>
+			<tr bgcolor=#cccccc>
+				<td align=center>виріб</td>
+				<td align=center width=150>найменування</td>
+				<td align=center width=20>кількість </td>
+				<td align=center>Выводить информацию на экран</td>
+			</tr>
+				<tr>
+				<td align=center>шини </td>
+				<td align=center><input type="text" name="tireqty" size=3 maxlength=3></td>
+				<td align=center><input type="text" name="tireqty" size=3 maxlength=3></td>
+				<td align="center"><input name="ShowInfo" type="checkbox" value="Yes"></td>
+			</tr>
+			<tr>
+				<td align=center>машинне мастило</td>
+				<td align=center><input type="text" name="oilty" size=3 maxlength=3></td>
+				<td align=center><input type="text" name="oilty" size=3 maxlength=3></td>
+				<td align="center"><input name="ShowInfo" type="checkbox" value="Yes"></td>
+			</tr>
+			<tr>
+				<td align=center>свічки запалювання</td>
+				<td align=center><input type="text" name="sparkqty" size=3 maxlength=3></td>
+				<td align=center><input type="text" name="sparkqty" size=3 maxlength=3></td>
+				<td align="center"><input name="ShowInfo" type="checkbox" value="Yes"></td>
+			</tr>
+			<tr>
+				<td colspan=4 align="center">
+					<input type=submit name=submit value="ввести замовлення"><br>
+					<input type=reset name=reset value="очистити">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<hr>
+
+	<br>
+
+	<!--Задание 5-7 -->
+	<form>
+		<div>Форма входу</div>
+		<p> Введіть логін:
+			<input name="login">
+		</p>
+		<p> Введіть пароль:
+			<input type="password" name="parol"> 
+			<br><br>
+			<input type=submit name=submit value="Войти"> 
+			<input type=reset name=submit value="Очистить данные">
+		</p>
+	</form>
+	<br>
+	<hr>
+	<br>
+
+	<!--Задание 8-11 -->
+
+	<h3> анкета користувача </h3>
+	<p> дайте відповіді на наступні запитання:</p>
+	<form method="post">
+	<p> ваше ім'я: <input name="name" size="48"></p>
+	<p> стать чоловіча <input name="gender" type=radio value="male"></p>
+	<p> стать жіноча <input name="gender" type=radio value="female"></p>
+	<p> діти <input name="family" type=text></p>
+	<ul>
+	<li> є <input name="children" type="checkbox" value="russian">
+	<li> немає <input name="children" type="checkbox" value="russian">
+	</ul>
+	<textarea name="text" cols=30 rows=3></textarea>
+	<br> 
+	<select name="місто проживання">
+	<option> суми
+	<option> київ
+	<option value="other">інше
+	<option selected> суми
+	</select>
+	<p>
+	<input type=submit><input type=reset>
+	</p>
+	</form>
+	<hr>
+	<!-- Задание 13-->
+
+	<center> 
+		<p><img src="http://bit.ly/2GqNAeY" alt=Пошук"></p>
+	</center>
+	<center>
+		<a href="http://google.com/" title="Google Search" target="_blank">Знайти в Google</a>
+	</center>
+	<hr>
+
+	<center>
+		<a href="Laba_1-2.3.html" title="Вторая страница" target="_blank">Вторая страница с формой</a>
+	</center>
+</body>
+</html>
